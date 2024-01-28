@@ -1,15 +1,9 @@
-/* Estilos gerais */
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Botão de WhatsApp Fixo */
-  .whatsapp-container {
+/* Botão de WhatsApp Fixo */
+.whatsapp-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
+    z-index: 10000; /* Ajustado para um valor alto */
     border-radius: 50%;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -17,7 +11,7 @@ body {
   }
   
   .whatsapp-container img {
-    width: 40px; /* Ajuste o tamanho conforme necessário */
+    width: 45px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     display: block;
     border-radius: 50%; /* Bordas circulares para a imagem */
@@ -33,12 +27,14 @@ body {
     padding: 10px;
     border-radius: 5px;
     display: none;
+    z-index: 10001; /* Ajustado para um valor alto */
   }
   
   .message-balloon p {
     margin: 0;
     font-size: 14px;
   }
+  
   /* Ajustes para Telas Menores */
   @media (max-width: 768px) {
     .whatsapp-container {
