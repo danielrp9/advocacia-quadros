@@ -1,0 +1,58 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Botão de WhatsApp Fixo */
+  .whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #25d366; /* Cor verde do WhatsApp e largura da borda */
+  }
+  
+  .whatsapp-container img {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block;
+    border-radius: 50%; /* Bordas circulares para a imagem */
+  }
+  
+  /* Balão de Mensagem */
+  .message-balloon {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #25d366; /* Cor verde do WhatsApp */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .message-balloon p {
+    margin: 0;
+    font-size: 14px;
+  }
+  /* Ajustes para Telas Menores */
+  @media (max-width: 768px) {
+    .whatsapp-container {
+      bottom: 10px;
+      right: 10px;
+    }
+  
+    .whatsapp-container img {
+      width: 40px; /* Ajuste o tamanho para telas menores */
+    }
+  
+    .message-balloon {
+      bottom: 60px;
+      right: 10px;
+    }
+  }
+  

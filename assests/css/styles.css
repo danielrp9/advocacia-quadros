@@ -1,0 +1,338 @@
+body {
+      font-family: 'Exo 2', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f8f8f8;
+    
+    }
+
+    header {
+      background-color: #c62828;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+   header img {
+      margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+      max-height: 1.5em; /* Altura máxima da imagem, ajuste conforme necessário */
+      filter: invert(1); /* Inverte as cores, tornando a imagem branca */
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #d32f2f;
+      padding: 15px;
+    }
+
+
+    #menu-icon {
+      display: none;
+      cursor: pointer;
+      font-size: 1.5em;
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-right: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffcc00;
+    }
+
+   /* main {
+      margin: 20px;  }/* Adiciona margens laterais */
+
+  /* Seção Início */
+  section.inicio {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Seção Sobre Nós */
+  section.sobre-nos {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Seção Serviços */
+  section.servicos {
+    background-color: #e0d5d59a;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Seção Contato */
+  section.contato {
+    background-color: #999;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .service-box {
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .service-box img {
+    max-width: 100px;
+  }
+
+    /* Seção Sobre Nós */
+  section.sobre-nos {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-us-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .about-us-item {
+    flex: 1 1 300px; /* Ajuste a largura máxima dos quadrados conforme necessário */
+    min-width: 250px; /* Tamanho mínimo definido */
+    margin: 10px;
+  }
+
+  .about-us-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .about-us-box:hover {
+    transform: scale(1.05);
+  }
+
+  .about-us-box i {
+    margin-bottom: 10px;
+    color: #c62828; /* Vermelho mais intenso */
+  }
+
+  .about-us-box h3 {
+    font-size: 1.2em;
+    color: #333;
+  }
+
+  .about-us-box p {
+    color: #666;
+  }
+
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #fff;
+      font-size: 1.5em;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ffcc00;
+    }
+
+     /* Media Query para telas menores */
+     @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #d01616; /* Tom de vermelho mais suave */
+        z-index: 1;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+      }
+
+      #menu-icon {
+        display: block;
+      }
+
+      .service-box {
+        width: 300px;
+      }
+    }
+
+
+    /* Seção Início */
+section.inicio {
+  position: relative;
+  background-image: url('../img/balança.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 213px 20px; /* Ajuste o espaçamento conforme necessário */
+}
+
+/* Container para o fundo transparente */
+.overlay-container {
+  position: relative;
+  z-index: 2; /* Garante que o contêiner esteja acima da imagem de fundo */
+}
+
+/* Conteúdo dentro do contêiner com fundo transparente */
+.overlay-content {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  max-width: 600px; /* Ajuste o tamanho conforme necessário */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+}
+
+
+/* Informação Textual */
+.overlay-content p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Restante do seu estilo existente */
+
+/* Estilo para a linha que separa as seções */
+hr {
+  border: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+
+/* Seção Proprietário (Owner) */
+section.owner {
+  background-color: #f2f2f2; /* Cor de fundo para a seção do proprietário */
+  padding: 50px 20px; /* Ajuste conforme necessário */
+  text-align: center;
+  position: relative; /* Adicione position: relative; para a sobreposição */
+}
+
+.owner-container {
+  display: flex;
+  flex-direction: column; /* Para empilhar os itens verticalmente em telas menores */
+  align-items: center;
+  position: relative; /* Adicione position: relative; para a sobreposição */
+  z-index: 1; /* Ajuste a ordem de empilhamento */
+  margin-top: -100px; /* Adicione uma margem negativa para mover para cima */
+}
+
+.owner-photo img {
+  width: 150px; /* Ajuste conforme necessário para o tamanho da foto */
+  height: 150px; /* Altura igual à largura para garantir um quadrado */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin-bottom: 20px; /* Espaço entre a foto e as informações */
+}
+
+.owner-info {
+  text-align: center;
+}
+
+.owner-info h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.red-band {
+  height: 5px;
+  width: 50px;
+  background-color: #c62828; /* Cor avermelhada */
+  margin: 10px auto;
+}
+
+.owner-info p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.oab-number {
+  font-size: 0.8em; /* Menos destacado */
+  color: #999;
+  margin-top: -10px; /* Ajuste para colocar abaixo da descrição */
+}
+
+.social-icons {
+  margin-top: 20px; /* Espaço entre a descrição da carreira e os ícones de redes sociais */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #c62828; /* Cor avermelhada no hover */
+}
+
